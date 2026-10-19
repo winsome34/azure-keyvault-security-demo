@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Azure Key Vault Security Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 850px;
+            margin: 60px auto;
+            padding: 20px;
+            background: #f3f6fa;
+            color: #243247;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            color: #0078d4;
+        }
+
+        .status {
+            padding: 12px;
+            background: #e7f6ec;
+            border-radius: 6px;
+            color: #176b35;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 18px;
+            background: #0078d4;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #667085;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Azure Key Vault Security Demo</h1>
+
+        <p>
+            Demonstrating secure application access to Azure Key Vault
+            using Microsoft Entra ID Managed Identity and Azure RBAC.
+        </p>
+
+        <div class="status">
+            Architecture: Azure App Service + Managed Identity + Key Vault
+        </div>
+
+        <h2>Security controls</h2>
+
+        <ul>
+            <li>Managed Identity authentication</li>
+            <li>Azure RBAC authorization</li>
+            <li>Secrets stored outside application source code</li>
+            <li>Secret values redacted from the demonstration response</li>
+        </ul>
+
+        <a href="/test-secret">Test Key Vault Connection</a>
+
+        <footer>
+            Educational cloud security lab — demonstration environment.
+        </footer>
+    </div>
+</body>
+</html>
